@@ -11,7 +11,7 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="https://kit.fontawesome.com/28b09c53b9.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/28b09c53b9.js"crossorigin="anonymous"></script>
 	</head>
 	<body>
 
@@ -123,8 +123,8 @@
 				<div class="images"><img src="/images-a/pexels-bp-2739250.jpg" alt="plate of mash potato and a meat skewer"></div>
 				<div class="images"><img src="/images-a/pexels-bp-2739268.jpg" alt="Plate of scrambled eggs, bacon and toast"></div>
 				<div class="images"><img src="/images-a/pexels-farhad-ibrahimzade-8696562.jpg" alt="Plate of fish"></div>
-			</div>
-			<div class="container-menu-two">
+			<!-- </div> -->
+			<!-- <div class="container-menu-two"> -->
 				<div class="images"><img src="/images-a/pexels-jane-doan-793765.jpg" alt="spaghetti bolognese and a salad platter"></div>
 				<div class="images"><img src="/images-a/pexels-jane-doan-974229.jpg" alt="fruit on bagels"></div>
 				<div class="images"><img src="/images-a/pexels-justin-doherty-4929720.jpg" alt="Plate of chicken and vegtables"></div>
@@ -132,6 +132,8 @@
 			</div>
 			<hr class="menu-hr-bottom">
 		</section>
+
+<!-- SECTION FOUR -->
 
 		<section class="section-four">
 			<div class="section-four-main">
@@ -145,11 +147,11 @@
 				<a class="phone-number" href="tel:+46752698">+46752698</a>
 				</div>
 			<div class="opening-hours">
-				<div>
+				<div class="mon-thu">
 					<p class="days">Monday to Tuesday</p>
 					<p class="hours"><bold>09:00 am - 22:00 pm<bold></p>
 				</div>
-				<div>
+				<div class="fri-sun">
 					<p class="days">Friday to Sunday</p>
 					<p class="hours">11:00 am - 20:00 pm</p>
 				</div>
@@ -158,7 +160,7 @@
 			<!---------------------------------------
 				 IMAGE SLIDER GOES HERE 
 				--------------------------------------->
-
+<div class="image-slider" id="image-slider">
 				<input type="radio" id="s-1" name="slider-control" checked="checked">
 				<input type="radio" id="s-2" name="slider-control">
 				<input type="radio" id="s-3" name="slider-control">
@@ -215,9 +217,14 @@
 					<div class="js-slider-indi indi-3"></div>
 				  </div>
 				</div> 
-
-
-
+</div>
+<!-- 
+	The replacement image
+ -->
+ <div class="single-image" id="single-image" style="display: none">
+	<!-- Your single image HTML goes here -->
+	<img class="" src="/images-slider/pexels-ella-olsson-1640772.jpg" alt="Your Single Image">
+ </div>
 
 				<!---------------------------------------------  
 				IMAGE SLIDER END

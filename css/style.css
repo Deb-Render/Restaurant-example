@@ -422,6 +422,10 @@ width: 200px;
 IMAGE SLIDER GOES HERE
 *******************************************************/
 
+.image-slider {
+
+}
+
 li {
   list-style: none;
 }
@@ -601,6 +605,29 @@ figcaption {
 /****************************************************  
 IMAGE SLIDER END
 ******************************************************/
+#single-image {
+  display: none;
+  text-align: center;
+  height: 20%;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#single-image img {
+  max-width: 100%;
+ 
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+
+
+
+/******************************************** 
+SINGLE IMAGE END
+********************************************/
 
 /* SECTION FIVE */
 
@@ -658,6 +685,19 @@ IMAGE SLIDER END
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+/* Ipad Mini */
+@media only screen and (max-width : 769px){
+
+  .container-menu{
+  max-width: 80%; /*fix this section later*/
+}
+
+.section-three {
+  height: 1000px;
+}
+
 }
 
 
@@ -718,7 +758,7 @@ IMAGE SLIDER END
   }
 
   .main-heading {
-    margin-left: 150px;
+    margin-left: 10%;
   }
 
   .main-socials {
@@ -731,13 +771,19 @@ IMAGE SLIDER END
   .section-two-content {
     /* margin-top: 75px; */
     margin-left: 20%;
-    width: 60%;
-    background-color: red;
+    max-width: 60%;
+    
   }
 
   .container-menu, .container-menu-two {
     width: 100%;
   }
+
+  .section-three {
+    height: 900px;
+  }
+
+  
 
   /* img {
     height: 150px;
@@ -748,20 +794,26 @@ IMAGE SLIDER END
 
 /* for mobile */
 @media only screen and (max-width: 675px) {
-  .main-heading {
-   /* margin-left: 50%; */
+
+.main-heading {
+  /* margin-left: 50%; */
+}
+
+.image-slider {
   
-  }
+}
 
   .main-heading {
+    margin-left: 5%;
     /* width: 280px; */
   }
 
   .section-two-content {
-    margin-top: 100px;
-   
-    width: 100%;
-    background-color: blue;
+    /* margin-top: 100px; */
+   margin-left: 10%;
+   margin-right: 10%;
+    max-width: 80%;
+    
   }
 
   .main-socials {
@@ -779,6 +831,40 @@ IMAGE SLIDER END
   img {
     height: 150px;
     width: 150px;
+  }
+
+  .section-three {
+    height: 1000px;
+  }
+
+  .section-four-main {
+    width: 100%;
+  }
+
+  .opening-hours {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .days {
+    text-align: center;
+  }
+
+  .section-three-nav {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  .container-menu, .container-menu-two {
+    width: 100%;
+  }
+
+  img {
+    height: 120px;
+    width: 120px;
   }
 
 }
